@@ -1,0 +1,1 @@
+DELETE FROM daily_pump_sales WHERE id = '9d242746-5ec5-40cd-878e-d8037919b288';

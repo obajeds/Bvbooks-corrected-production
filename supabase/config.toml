@@ -1,0 +1,69 @@
+project_id = "qarkrmokbgyeeieefjbf"
+
+# Edge Function Configuration
+# verify_jwt = false means we handle JWT verification in the function code
+# This provides more flexibility and better error handling
+
+[functions.paystack]
+# Payment functions need custom auth handling for verification callbacks
+verify_jwt = false
+
+[functions.send-staff-invite]
+# Requires authenticated business owner
+verify_jwt = false
+
+[functions.accept-staff-invite]
+# Public endpoint for invitation acceptance (rate limited)
+verify_jwt = false
+
+[functions.send-notification-test]
+# Requires authenticated user
+verify_jwt = false
+
+[functions.check-expired-subscriptions]
+# Internal cron job - no JWT needed
+verify_jwt = false
+
+[functions.sync-role-permissions]
+# Requires authenticated user
+verify_jwt = false
+
+[functions.send-whatsapp]
+# Requires authenticated user
+verify_jwt = false
+
+[functions.ai-sales-insights]
+# Requires authenticated business owner/staff
+verify_jwt = false
+
+[functions.sync-sales]
+# Offline sync - custom auth handling
+verify_jwt = false
+
+[functions.support-ai-chat]
+# Support chat - requires authenticated user
+verify_jwt = false
+
+[functions.client-brm]
+# BRM contact info - requires authenticated user
+verify_jwt = false
+
+[functions.send-event-notification]
+# Event-driven email notifications - called from DB triggers via pg_net
+verify_jwt = false
+
+[functions.send-scheduled-notifications]
+# Scheduled cron job for periodic reports
+verify_jwt = false
+
+[functions.process-sale]
+# Secure sale processing - custom auth handling in code
+verify_jwt = false
+
+[functions.price-check]
+# Public price checker - no auth needed, rate limited
+verify_jwt = false
+
+[functions.check-error-alerts]
+# Monitoring alert checker - cron triggered
+verify_jwt = false

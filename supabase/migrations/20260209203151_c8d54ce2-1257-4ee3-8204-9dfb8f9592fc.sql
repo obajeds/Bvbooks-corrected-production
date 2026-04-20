@@ -1,0 +1,1 @@
+DELETE FROM settlements WHERE id = '79e2b7df-3832-4c55-80f9-a0c5d2188cea';

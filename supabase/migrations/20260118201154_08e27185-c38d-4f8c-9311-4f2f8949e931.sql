@@ -1,0 +1,1 @@
+DELETE FROM daily_pump_sales WHERE status = 'pending';

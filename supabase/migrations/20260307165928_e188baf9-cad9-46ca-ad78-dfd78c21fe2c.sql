@@ -1,0 +1,1 @@
+UPDATE pumps SET current_meter_reading = 142297.47, updated_at = now() WHERE id = '48be2497-717b-4662-b342-b3f91de595cd';

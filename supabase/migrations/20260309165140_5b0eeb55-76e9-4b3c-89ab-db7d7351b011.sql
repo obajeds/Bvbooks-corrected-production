@@ -1,0 +1,1 @@
+UPDATE platform_features SET is_enabled = true, updated_at = now() WHERE feature_key = 'approvals_module';

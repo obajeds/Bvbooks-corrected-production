@@ -1,0 +1,1 @@
+DELETE FROM public.daily_pump_sales WHERE id IS NOT NULL;

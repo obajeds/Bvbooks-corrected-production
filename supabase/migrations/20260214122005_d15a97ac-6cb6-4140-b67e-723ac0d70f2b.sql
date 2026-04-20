@@ -1,0 +1,1 @@
+DELETE FROM approval_requests WHERE status = 'pending' AND request_type = 'stock_adjustment';

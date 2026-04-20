@@ -1,0 +1,1 @@
+ALTER TABLE public.sale_items ADD COLUMN IF NOT EXISTS cost_price numeric DEFAULT 0;
